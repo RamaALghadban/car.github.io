@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+    <link rel="stylesheet"href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"/>
+    <link rel="stylesheet" href="Details.css">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+  
+  <section class="home">
+    <nav>
+        <div class="logo">
+            <img src="../img/Logo.png" alt="logo" />
+          </div>
+        <ul >
+            <li>
+              <a href="#"> Home</a>
+            </li>
+            <li>
+              <a href="#"> Catalogue</a>
+            </li>
+            <li>
+              <a href="#"> Contact Us</a>
+            </li>
+            <li>
+                <a href="#"> Help</a>
+              </li>
+        </ul>
+        <div class="cart-profile">
+            <a href="../cart/cart.html" alt="cart" class="cart"  
+              ><i class="fi fi-rr-shopping-cart" ></i
+            ></a>
+        <a href="#" class="btn-register">Register</a>
+        </div>
+    </nav>
+
+</section>
+
+
+
+    
+    <div class="right">
+
+      <img src="../img/Vector 3.png" alt=""   class="image">
+
+      
+      <div class="text">
+      <h1 class="details">Details</h1> 
+      <br>
+      <br>
+      <br>
+      <span class="rat"> Rating And Review </span>
+
+      <br> <br>
+
+
+      <!-- starcode -->
+         <div class="stara_rating">
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+
+          <span class="four">4.5</span>
+         </div>
+         
+      
+         
+<br>
+<br>
+<br>
+<br>
+
+      <span class="discription"> Discription</span>
+      <br>
+      <br>
+      <p class="par"> The culmimination of comfort,luxury, and powerful <br>
+        living is embodied <br>
+        in the First-Ever BMWX7 -the biggest BMW ever <br>
+        built.
+      </p>
+      <br>
+      <br>
+
+
+      <div class="product-color">
+        <span class="color-word"> Colors</span>
+        <br>
+        <div class="color-choose">
+          <div>
+          <input data-image="white" type="radio" id="white" name="color" value="white" >
+          <label for="white"><span></span></label>
+        </div>
+
+        <div>
+          <input data-image="black" type="radio" id="black" name="color" value="black">
+    <label for="black"><span></span></label>
+    </div>
+
+
+    <div>
+      <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+<label for="blue"><span></span></label>
+</div>
+
+   </div>
+   <br>
+   <br>
+
+<div class="circle">
+  <div>
+    <input data-image="white2" type="radio" id="white2" name="coloro" value="white2" >
+          <label for="white2"><span></span></label>
+          <span class="w">_</span>
+  </div>
+
+   <div><span class="num"> 1</span><div></div>
+
+  <div>
+    <input data-image="brown" type="radio" id="brown" name="coloro" value="brown" >
+          <label for="brown"><span></span></label>
+          <span class="plus">+</span>
+  </div>
+</div>
+  
+  <div class="pprice" ><span class="price"> Price:</span> <span class="price1">250 $ </span></div>
+</div>
+</div>
+
+<br>
+
+<a href="#"  class="cart-btn"> Add To Cart</a>
+
+<a href="#"  class="buying"> Buy Now</a>
+
+</div>
+</div>
+</div>
+
+
+<section class="left" >
+  <aside >
+
+  <ul  class="side">
+
+  <li> 
+    <a href="#"> Type > </a> 
+  </li>
+
+  <li> 
+    <a href="#"> Car ></a>
+  </li>
+
+  <li >
+<a href="#"> Details </a>
+  </li>
+  </ul>
+     </aside>
+     <br>
+     <br>
+
+     <p class="honda"> Honda - Civic Type R</p>
+     <br>
+     <br>
+
+     <SPan class="six">6000 cc</SPan>
+</section>
+
+
+
+
+<section class="pic">
+
+  <img    class = picture src="../img/car-right.png" alt="">
+</section>
+
+
+
+
+          <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+           <div class="carousel">
+          <img  src="../img/page3.png" alt="img" draggable="false">
+          <img  src="../img/page3-2.png" alt="img" draggable="false">
+          <img  src="../img/page3-3.png" alt="img" draggable="false">
+          <img  src="../img/page3-4.png" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+
+
+
+
+
+      <script>
+        const allStars=document.querySelectorAll('.star');
+        allStars.forEach((star,i)=>{
+            star.onclick=function(){
+                let current_star_level = i+1;
+                allStars.forEach((star,j)=>{
+                    if(current_star_level >=j+1)
+                    {
+                        star.innerHTML='&#9733';
+                    }else{
+                        star.innerHTML='&#9734';
+    
+                    }
+    
+                
+                })
+    
+                }
+            }
+        )
+       </script>
+
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>
